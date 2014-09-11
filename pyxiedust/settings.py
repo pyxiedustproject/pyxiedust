@@ -39,6 +39,7 @@ INSTALLED_APPS = (
 
     'blog',
     'tasks',
+    'food',
 )
 
 MIDDLEWARE_CLASSES = (

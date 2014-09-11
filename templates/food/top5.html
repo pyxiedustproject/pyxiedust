@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>My food top 5</h1>
+
+<ol>
+    {% for food in top5 %}
+        <li>{{ food.name }} <small>(Score: {{ food.score }})</small></li>
+    {% endfor %}
+</ol>
+{% endblock %}
