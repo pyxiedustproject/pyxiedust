@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,8 +7,8 @@
     <meta charset="utf-8">
     <title>My Pyxie Dust website!</title>
 
-    <link href='http://fonts.googleapis.com/css?family=Crafty+Girls|Lato:300,400,700,300italic,400italic,700italic|Indie+Flower&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="static/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Crafty+Girls|Lato:300,400,700,300italic,400italic,700italic|Indie+Flower&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
   </head>
   <!-- The end of HEAD -->
 
@@ -22,7 +23,7 @@
 
         <section>
 
-            <img src="static/picture.jpg" id="mypicture" />
+            <img src="{% static 'picture.jpg' %}" id="mypicture" />
             <p>My name is: Tinker Bell</p>
             <p>I live in: the Neverland</p>
             <p>I am 13 years old</p>
@@ -33,13 +34,13 @@
 
         </section>
 
-        <hr></hr>
+        <hr />
 
         <section>
 
             <ul>
-                <li><a href="">Read my blog</a></li>
-                <li><a href="">See my to do list</a></li>
+                <li><a href="#TODO">Read my blog</a></li>
+                <li><a href="#TODO">See my to do list</a></li>
                 <li>My favourite food</li>
             </ul>
 
