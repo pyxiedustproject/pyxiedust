@@ -1,0 +1,32 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- This is HEAD -->
+  <head>
+    <meta charset="utf-8">
+    <title>My Pyxie Dust website!</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Crafty+Girls|Lato:300,400,700,300italic,400italic,700italic|Indie+Flower&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+  </head>
+  <!-- The end of HEAD -->
+
+  <!-- This is BODY -->
+  <body>
+
+    <main id="box">
+
+        <header>
+            My Pyxie Dust Website!
+        </header>
+
+        {% block content %}
+        {% endblock %}
+
+    </main>
+
+  </body>
+  <!-- The end of BODY -->
+
+</html>
