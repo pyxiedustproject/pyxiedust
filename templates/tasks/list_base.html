@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{% block task_list_title %}List of tasks{% endblock %}</h1>
+
+<ul class="tasks">
+    {% for task in tasks %}
+        <li class="task{% if task.is_urgent %} urgent{% endif %}">
+            <p class="title">{{ task.title }}</p>
+            <div class="text">{{ task.text|linebreaks }}</div>
+            {% if task.deadline %}
+            <p class="deadline">To do before {{ task.deadline|date:'d/m/Y'}}</p>
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>
+
+<nav>
+    <ul>
+        <li><a href="{% url 'task_list_all' %}">All tasks</a></li>
+        <li><a href="{% url 'task_list_todo' %}">Tasks to do</a></li>
+    </ul>
+</nav>
+{% endblock %}
