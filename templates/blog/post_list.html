@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>List of posts</h1>
+
+{% for post in posts %}
+    <section>
+        <h2><a href="{% url 'post_detail' post.id %}">{{ post.title }}</a></h2>
+        <p>Posted on {{ post.date_published|date:'d/m/Y' }} at {{ post.date_published|time:'H:i'}}</p>
+        <div>
+            {{ post.text|linebreaks }}
+        </div>
+    </section>
+{% endfor %}
+
+{% endblock %}
