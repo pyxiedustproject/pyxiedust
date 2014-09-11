@@ -1,0 +1,50 @@
+
+
+html, body {
+    margin: 0;
+    width: 100%; /* This will make the website stretch to fill the whole browser window */
+    height: 100%; /* This will make the website stretch to fill the whole browser window */
+}
+
+body {
+    background: url('food.png'); /* This is our background image */
+    font-family: 'Lato'; /* This sets our font style on the whole page */
+    font-size: 22px; /* This is our font size */
+}
+
+#box {
+    width: 1000px; /* This is the size of the white box for out contents */
+    margin: 0 auto; /* This makes our white box to be on the center of the window */
+    background: rgba(255, 255, 255, 0.4); /* This sets our website to white but with less than half transparency */
+}
+
+header {
+    text-align: center; /* This will make our text to appear in the center of the header */
+    font-family: 'Crafty Girls'; /* This sets our font style */
+    font-size: 50px; /* This is our font size */
+    padding-top: 30px; /* This is the empty space between the top of the browser window and text */
+    padding-bottom: 30px; /* This is the empty space between the bottom of the header and the next content */
+    color: purple; /* This is the color ouf our text */
+}
+
+section {
+    padding-left: 30px; /* This will give us a 30px empty space on the left */
+    padding-right: 30px; /* This will give us a 30px empty space on the right */
+}
+
+#mypicture {
+    float: left; /* This makes the photo align to the left side of the website */
+    margin-right: 60px; /* This makes a little bit of empty space on the right side of the picture */
+}
+
+.quote {
+    font-family: 'Crafty Girls';
+}
+
+a, a:hover {
+    color: purple;
+}
+
+hr {
+    border-color: purple;
+}
