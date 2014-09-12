@@ -2,8 +2,8 @@
 
 html, body {
     margin: 0;
-    width: 100%; /* This will make the website stretch to fill the whole browser window */
-    height: 100%; /* This will make the website stretch to fill the whole browser window */
+    width: 100%; /* This will make the website stretch to fill the whole browser window horizontally */
+    height: 100%; /* This will make the website stretch to fill the whole browser window vertically */
 }
 
 body {
@@ -41,10 +41,27 @@ section {
     font-family: 'Crafty Girls';
 }
 
-a, a:hover {
+a,
+a:hover { /* :hover means when the mouse goes over the element */
     color: purple;
 }
 
 hr {
     border-color: purple;
+}
+
+.gallery {
+    padding-left: 0;
+}
+.gallery li {
+    list-style: none;
+    border-width: 2px;
+    border-color: purple;
+    border-style: solid;
+    display: inline-block; /* The pictures follow each other horizontally instead of vertically */
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.gallery .description {
+    text-align: center;
 }
