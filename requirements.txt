@@ -5,3 +5,5 @@ gunicorn==19.1.1
 psycopg2==2.5.4
 static3==0.5.1
 whitenoise==1.0.3
+boto==2.32.1
+django-storages==1.1.8

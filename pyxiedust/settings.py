@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'blog',
     'tasks',
     'food',
+    'photos',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -100,3 +101,12 @@ TEMPLATE_DIRS = (
 
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/'
+
+if not DEBUG:
+    DEFAULT_FILE_STORAGE = 'storages.s3boto.S3BotoStorage'
+    AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
+    AWS_STORAGE_BUCKET_NAME = os.getenv('AWS_STORAGE_BUCKET_NAME')
+else:
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
+    MEDIA_URL = '/media/'
