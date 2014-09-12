@@ -9,6 +9,11 @@ from tasks import views as tasks_views
 from food import views as food_views
 from photos import views as photo_views
 
+
+# Here we define all the pages that are available on the site.
+# We use this strange syntax called "regular expressions" which is why
+# we have the characters like ^ or $.
+
 urlpatterns = patterns('',
     url(r'^$', main_views.home, name='home'),
 

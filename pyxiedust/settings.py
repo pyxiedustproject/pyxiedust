@@ -52,7 +52,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
-    'pyxiedust.middleware.LoginRequiredMiddleware',
+    'pyxiedust.middleware.LoginRequiredMiddleware',  # Remove this line to allow anyone to view the website
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )

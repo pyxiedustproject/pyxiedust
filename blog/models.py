@@ -1,6 +1,15 @@
 from django.db import models
 from django.utils import timezone
 
+# Here we define the "Post" model which is the object that will store all the
+# information.
+# The first lines define the "fields" which are all the different types of
+# information we want to store.
+# If you add, change, or delete some fields, don't forget to run:
+# python manage.py makemigrations
+# python manage.py migrate
+# heroku run python manage.py migrate
+
 class Post(models.Model):
     title = models.CharField(max_length=200)
     text = models.TextField()
