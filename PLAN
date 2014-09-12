@@ -1,0 +1,26 @@
+Presentation of Python/Django
+    - https://www.python.org/
+    - https://www.djangoproject.com/
+Installation
+    - Python
+    - Heroku toolbelt
+    - Text editor
+Python Introduction
+    - Command line: http://tutorial.djangogirls.org/intro_to_command_line/README.html
+    - Python: http://tutorial.djangogirls.org/python_installation/README.html
+The website:
+    - Create github account
+    - Fork https://github.com/pyxiedustproject/pyxiedust
+    - Clone
+    - Run locally (see instructions in README)
+    - Explore the code
+    - Make our first change
+    - Deploy our first change
+
+
+
+Resources:
+    - Django Girls tutorial: https://tutorial.djangogirls.org
+    - Color picker: http://www.colorpicker.com/
+    - Image editor: http://apps.pixlr.com/editor/
+    - 32bit/64bit: http://support.microsoft.com/kb/827218
