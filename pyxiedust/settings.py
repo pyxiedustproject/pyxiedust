@@ -13,6 +13,9 @@ import os
 import dj_database_url
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
+ADMINS = (('Baptiste', 'bmispelon@gmail.com'),)
+SERVER_EMAIL = 'workshop@pyxiedustproject.com'
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
@@ -107,6 +110,12 @@ if not DEBUG:
     AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
     AWS_STORAGE_BUCKET_NAME = os.getenv('AWS_STORAGE_BUCKET_NAME')
+    EMAIL_HOST = 'smtp.mandrillapp.com'
+    EMAIL_PORT = 587
+    EMAIL_USE_TLS = True
+    EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
+    EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
 else:
     MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
     MEDIA_URL = '/media/'
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
