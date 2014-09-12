@@ -1,5 +1,6 @@
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
+from django.contrib.auth import views as auth_views
 
 from pyxiedust import views as main_views
 from blog import views as blog_views
@@ -22,4 +23,5 @@ urlpatterns = patterns('',
 
     # Admin pages
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^login/$', auth_views.login, name='login'),
 )
