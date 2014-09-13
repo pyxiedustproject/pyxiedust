@@ -1,0 +1,22 @@
+, comma
+: colon
+; semi-colon
+? question mark
+! exclamation mark
+. period
+- dash
+_ underscore
+# pound sign, hash mark
+& ampersand
+{} curly braces
+[] square brackets
+() parentheses (parens)
+<> angle brackets
+/ slash
+\ backslash, antislash
+^ carret
+% percent sign
+= equal sign
+__ double underscore ("dunder")
+` backtick
+@ at sign
