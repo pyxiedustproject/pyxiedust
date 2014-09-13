@@ -44,6 +44,7 @@ INSTALLED_APPS = (
     'tasks',
     'food',
     'photos',
+    'pyxiedust.utils',
 )
 
 MIDDLEWARE_CLASSES = (
