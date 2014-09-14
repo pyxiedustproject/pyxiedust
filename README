@@ -10,6 +10,8 @@ cd pyxiedust
 
 # Create the "virtual environment" for python (called "myvenv") here
 python3 -m venv myvenv
+# On windows, you might need to type:
+C:\Python34\python -m venv myvenv
 
 # Activate the "virtual environment"
 # Windows:
@@ -26,32 +28,4 @@ git remote add heroku git@heroku.com:pxd-YOURNICKNAME.git
 # Log in to heroku
 # If you don't have a heroku account, ask a coach.
 heroku login
-#-----------------------------------------------------------------------------#
-
-
-
-#-----------------------------------------------------------------------------#
-# How to start the website on your computer
-# Make sure the "virtual environment" is activated first
-python manage.py runserver
-#-----------------------------------------------------------------------------#
-
-
-
-#-----------------------------------------------------------------------------#
-# How to upload the site online
-#-----------------------------------------------------------------------------#
-# Take a look at what has changed (you can run this as many times as you want):
-git status
-# Prepare to save all the changes to "git"
-git add -A .
-# Check what will be saved (if there are things you don't want there, ask a coach)
-git status
-# Save all the changes for real this time (you can type any message you want, like "changed my picture")
-git commit -m "Here you can describe what you changed."
-# Finally, upload the new version online
-git push heroku master
-# If you want (not necessary), you can save your changes on GitHub
-# (that way, you can start the project from another computer for example)
-git push origin master
 #-----------------------------------------------------------------------------#
