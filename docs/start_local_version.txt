@@ -1,0 +1,16 @@
+How to get the website running on your computer again?
+(this assumes that you've already installed it before)
+
+1) Open the terminal
+
+2) Change to the "pyxiedust" folder:
+    cd pyxiedust
+
+3) Activate the virtual environment
+    myvenv\Scripts\activate
+
+4) Start the local server
+    python manage.py runserver
+
+5) Visit the website in your browser (Firefox, Safari, Google Chrome, ...)
+Go to http://127.0.0.1:8000

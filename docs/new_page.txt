@@ -1,0 +1,16 @@
+How to add a new page to your site:
+
+1) Create a template:
+    Create a file new_page.html (you can call it how you want)
+
+2) Create a view:
+    In pyxiedust/views.py, create a function:
+    def new_page(request):
+        return render(request, 'new_page.html')
+
+3) Configure the view
+    Add this line in pyxiedust/urls.py
+    url(r'^newpage/$', main_views.new_page, name='new_page'),
+
+4) (optional) Add a link to this new page:
+    <a href="{% url 'new_page' %}">New page</a>

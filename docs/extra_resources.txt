@@ -1,0 +1,3 @@
+- Django Girls tutorial: https://tutorial.djangogirls.org
+- Color picker: http://www.colorpicker.com/
+- Online image editor: http://apps.pixlr.com/editor/

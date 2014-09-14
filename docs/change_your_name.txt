@@ -1,0 +1,9 @@
+How to change your name on the homepage
+
+1) Open the file called "home.html" inside the "templates" folder in your text editor.
+
+2) Make the change you want (change your name)
+
+3) Save the file
+
+4) Reload the page.

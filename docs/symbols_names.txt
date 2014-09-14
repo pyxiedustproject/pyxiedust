@@ -3,8 +3,8 @@
 ; semi-colon
 ? question mark
 ! exclamation mark
-. period
-- dash
+. period, dot
+- dash, minus
 _ underscore
 # pound sign, hash mark
 & ampersand

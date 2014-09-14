@@ -1,0 +1,25 @@
+How to upload changes to the online version of your site (on heroku)
+
+
+1) Take a look at what has changed (you can run this as many times as you want):
+    git status
+
+2) Prepare to save all the changes to "git"
+    git add -A .
+
+3) Check what will be saved (if there are things you don't want there, ask a coach how to remove them)
+    git status
+
+4) Save all the changes for real this time
+You can type any message you want, like "changed my picture".
+    git commit -m "Here you can describe what you changed."
+
+5) Finally, upload the new version online
+    git push heroku master
+
+6) (optional) If you want, you can save your changes on GitHub
+That way, you can start the project from another computer for example.
+    git push origin master
+
+7) (optional) If you want, you can transfer data (blog posts, tasks, favorite food) to the heroku website
+    python manage.py dumpdata tasks food blog | heroku run python manage.py loaddata2 -

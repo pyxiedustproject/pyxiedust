@@ -1,0 +1,10 @@
+How to add an image to your site
+
+1) Put the image in the "static" folder (as an example, we call the file photo.jpg)
+
+2) In your template, at the top, make sure there is a line that says
+    {% load staticfiles %}
+If it's not there, add it.
+
+3) In the same template, add the image:
+    <img src="{% static 'photo.jpg' %}">

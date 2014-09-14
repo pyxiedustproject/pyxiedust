@@ -1,0 +1,15 @@
+HTML is how you build pages on the internet.
+It's made with "tags" which start with < and end with >.
+
+Here's a short list of HTML elements you can use in your pages:
+
+* <p>A paragraph of text</p>
+* <br>: A "line break" (makes the text go to the next line)
+* <hr>: A "horizontal ruler", a long thin line that separates elements
+* <em>Some important text</em>: It will be shown in italics by default but we can use CSS to tweak that.
+* <strong>Some very important text</strong>: It will be shown in bold by default but we can use CSS to tweak that.
+* <img src="image.jpg">
+* <ul>: An "unordered list" of items. Use <li> ("list item") elements inside.
+* <ol>: An "ordered list" of elements. Numbers will be shown in front of each element. Use <li> inside.
+* <a href="http://example.com">Text</a>: A link ("anchor") to a different page. 
+* <h1>, <h2>, ..., <h6>: A title (and corresponding sub-titles)
